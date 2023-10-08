@@ -33,6 +33,9 @@
   "dependencies": {
   
     
+  "@twa-dev/sdk": "^6.9.0",
+  
+    
   "react": "^18.2.0",
   
     
