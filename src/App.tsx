@@ -5,9 +5,10 @@ import './App.css'
 //import WebApp from '@twa-dev/sdk'
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import WebApp from '@twa-dev/sdk'
 
 function App() {
-  
+  WebApp.backgroundColor = WebApp.themeParams.bg_color
 
   return (
     <>
@@ -24,7 +25,7 @@ function App() {
         <TextField
           required
           id="firstName"
-          label="Имя*"
+          label="Имя"
           defaultValue="Hello World"
         />
 
