@@ -1,6 +1,7 @@
 //import { useState } from 'react'
 //import reactLogo from './assets/react.svg'
 //import viteLogo from '/vite.svg'
+//import { Style } from '@mui/icons-material';
 import './App.css'
 //import WebApp from '@twa-dev/sdk'
 import Box from '@mui/material/Box';
@@ -8,10 +9,11 @@ import TextField from '@mui/material/TextField';
 import WebApp from '@twa-dev/sdk'
 
 function App() {
-  WebApp.backgroundColor = WebApp.themeParams.bg_color
+
+  let bg_color = WebApp.themeParams.bg_color
 
   return (
-    <>
+    <div style={{backgroundColor: bg_color}}>
       <h1>Запись на приём</h1>
       <Box
       component="form"
@@ -29,8 +31,8 @@ function App() {
           defaultValue="Hello World"
         />
 
-    </Box>
-    </>
+      </Box>
+    </div>
   )
 }
 
