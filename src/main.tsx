@@ -10,6 +10,7 @@ import '@fontsource/roboto/700.css';
 
 WebApp.ready();
 
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <App />
